@@ -221,7 +221,7 @@ ol.tries{margin:0;padding-left:1.4em} ol.tries li{margin-bottom:10px}
     var t=TYPES[pick()];
     $("rname").textContent="あなたは「"+t.name+"」💧"; $("rtrytitle").textContent="📝 "+t.name+"の取扱説明書"; $("rlead").textContent=t.lead;
     var ul=$("rscene"); ul.innerHTML=""; t.scene.forEach(function(s){ var li=document.createElement("li"); li.textContent=s; ul.appendChild(li); });
-    $("rwhy").textContent=t.why; $("rsrc").textContent="（"+t.src+"）";
+    $("rwhy").textContent=t.why; $("rsrc").textContent=t.src;
     var ol=$("rtry"); ol.innerHTML=""; t.tries.forEach(function(s){ var li=document.createElement("li"); li.textContent=s; ol.appendChild(li); });
     $("rpic").alt=t.name;
     show("result");
